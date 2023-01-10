@@ -17,7 +17,7 @@ exports.createPages = async ({ actions }) => {
   })
   createRedirect({
     fromPath: `/it/*`,
-    toPath: `https://italiansite.gatsbyjs.io/*`,
+    toPath: `https://italiansite.gatsbyjs.io/it/*`,
     statusCode: 200,
   })
 }
