@@ -16,8 +16,8 @@ exports.createPages = async ({ actions }) => {
     defer: true,
   })
   createRedirect({
-    fromPath: `/test`,
-    toPath: `https://www.gatsbyjs.com/docs/how-to/cloud/working-with-redirects-and-rewrites/#wildcard-path-redirects`,
+    fromPath: `/test-*`,
+    toPath: `/page-2`,
   });
 }
 
