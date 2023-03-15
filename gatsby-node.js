@@ -16,7 +16,7 @@ exports.createPages = async ({ actions }) => {
     defer: true,
   })
   createRedirect({
-    fromPath: `/test/#sub10`,
+    fromPath: `/test`,
     toPath: `/#sub10`,
     redirectInBrowser: true,
   });
