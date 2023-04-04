@@ -16,8 +16,12 @@ exports.createPages = async ({ actions }) => {
     defer: true,
   })
   createRedirect({
-    fromPath: `/test`,
-    toPath: `/https://www.ncaa.com/mens-final-four`,
+    fromPath: `/*`,
+    toPath: `/`,
+    statusCode: 451,
+    conditions: {
+      country: `md`
+    }
   });
 }
 
