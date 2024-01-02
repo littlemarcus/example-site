@@ -16,12 +16,9 @@ exports.createPages = async ({ actions }) => {
     defer: true,
   })
   createRedirect({
-    fromPath: `/*`,
-    toPath: `/`,
-    statusCode: 451,
-    conditions: {
-      country: `md`
-    }
+    fromPath: "/page-2",
+    toPath: "https://www.google.com",
+    isPermanent: true,
   });
 }
 
